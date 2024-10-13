@@ -47,7 +47,7 @@ export const UI = () => {
   const [page, setPage] = useAtom(pageAtom)
 
   useEffect(() => {
-    const audio = new Audio('/audios/page-flip-01a.mp3')
+    const audio = new Audio('./audios/page-flip-01a.mp3')
     audio.play()
   }, [page])
 
@@ -55,7 +55,7 @@ export const UI = () => {
     <>
       <main className="pointer-events-none select-none z-10 fixed  inset-0  flex justify-between flex-col">
         <a className="pointer-events-auto mt-10 ml-10" href="/hooks">
-          <img className="w-40 rotate-12" src="/images/logo.png" />
+          <img className="w-40 rotate-12" src="./images/logo.png" />
         </a>
         <div className="w-full overflow-auto pointer-events-auto flex justify-center">
           <div className="overflow-auto flex items-center gap-4 max-w-full p-10">
